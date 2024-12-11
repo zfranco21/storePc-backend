@@ -1,0 +1,36 @@
+Filtrar productos:
+
+Por categoría: Obtener productos pertenecientes a una categoría específica.
+Por rango de precios: Filtrar productos que se encuentren entre un precio mínimo y máximo.
+Por disponibilidad: Mostrar solo productos en stock.
+Buscar productos:
+
+Búsqueda por nombre o descripción: Permitir a los usuarios buscar productos utilizando palabras clave.
+Ordenar productos:
+
+Por precio: Orden ascendente o descendente.
+Por popularidad o calificación: Mostrar los productos más vendidos o mejor valorados.
+Destacados o promociones:
+
+Productos en oferta: Mostrar productos que tienen descuentos aplicados.
+Productos destacados: Mostrar una selección especial de productos.
+Paginar resultados:
+
+Implementar paginación para manejar grandes volúmenes de productos.
+Calificaciones y reseñas:
+
+Agregar reseñas de los clientes para un producto.
+Obtener la calificación promedio y las reseñas de un producto.
+Detalles del producto:
+
+Endpoint para obtener información detallada de un producto específico, incluyendo imágenes, especificaciones técnicas, y reseñas.
+Sugerencias de productos:
+
+Productos similares: Mostrar productos relacionados o complementarios.
+Recomendaciones personalizadas: Basadas en el historial de compras o preferencias del usuario.
+Gestión de stock (solo para administradores):
+
+Actualizar inventario: Endpoint para modificar manualmente la cantidad en stock de un producto.
+Estado de productos (habilitar/deshabilitar):
+
+Endpoint para ocultar productos temporalmente sin eliminarlos (ej., productos fuera de stock o en mantenimiento).

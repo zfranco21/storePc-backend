@@ -1,0 +1,30 @@
+Obtener categorías principales:
+
+Endpoint para listar categorías principales o padres (aquellas que no tienen una categoría superior).
+Obtener subcategorías:
+
+Listar las subcategorías asociadas a una categoría principal específica.
+Obtener categorías con productos:
+
+Devuelve una lista de categorías, cada una con sus productos asociados.
+Buscar categorías:
+
+Endpoint para buscar categorías por nombre o descripción utilizando palabras clave.
+Filtrar productos por categoría:
+
+No solo un CRUD de categorías, sino un endpoint que combine categorías y productos para devolver todos los productos de una categoría específica.
+Categorías destacadas o populares:
+
+Listar categorías marcadas como "destacadas" o más visitadas.
+Estadísticas de categoría (solo para administradores):
+
+Información analítica sobre categorías, como el número de productos en cada una, ventas totales asociadas, etc.
+Asociación jerárquica (opcional):
+
+Endpoints para gestionar relaciones jerárquicas, como asignar una subcategoría a una categoría padre.
+Estado de categorías (habilitar/deshabilitar):
+
+Endpoint para habilitar o deshabilitar categorías, permitiendo ocultarlas del frontend sin eliminarlas.
+Categorías en uso:
+
+Listar categorías que tienen al menos un producto asociado, útil para evitar mostrar categorías vacías en el frontend.

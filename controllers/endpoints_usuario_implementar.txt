@@ -1,0 +1,67 @@
+Registro de usuario: 2/3
+Endpoint para que nuevos usuarios se registren. DONE
+Validación de datos (email único, contraseñas seguras). DONE
+Generación de un token de acceso al registrarse.
+
+Inicio de sesión: 
+Verificar credenciales del usuario. 
+Posibilidad de iniciar sesión como administrador si corresponde.
+Posibilidad de devolver un token de autenticación (JWT, por ejemplo).
+
+Cierre de sesión:
+Invalidar el token actual o borrar la sesión activa.
+Renovación de token:
+
+Endpoint para renovar un token JWT antes de que expire.
+Gestión de Datos de Usuarios
+
+Actualización de perfil:
+Permitir al usuario actualizar su información personal como nombre, email o contraseña.
+Recuperación de contraseña:
+
+Enviar un correo con un enlace o código para restablecer la contraseña.
+
+Restablecimiento de contraseña:
+Endpoint para que el usuario establezca una nueva contraseña tras la verificación.
+Gestión de Roles y Permisos
+
+Promoción a administrador:
+Endpoint para que un usuario administrador pueda otorgar permisos de administrador a otros usuarios.
+
+Listar usuarios (administradores):
+Permitir a los administradores obtener una lista de todos los usuarios registrados.
+
+Suspender usuarios:
+Endpoint para que un administrador desactive o suspenda cuentas de usuarios problemáticos.
+Gestión de Carrito y Pedidos
+
+Obtener carrito del usuario:
+Recuperar el estado actual del carrito del usuario.
+
+Añadir producto al carrito:
+Endpoint para que los usuarios agreguen productos a su carrito.
+
+Eliminar producto del carrito:
+Quitar productos específicos del carrito.
+
+Historial de pedidos:
+Permitir al usuario consultar su historial de compras.
+
+Estado del pedido:
+Consultar el estado de un pedido (pendiente, enviado, entregado, etc.).
+Otros Endpoints Comunes
+
+Guardar direcciones de envío:
+Permitir al usuario agregar o actualizar direcciones para el envío de pedidos.
+
+Guardar métodos de pago:
+Endpoint para que los usuarios configuren métodos de pago preferidos.
+
+Notificaciones o alertas:
+Listar notificaciones relacionadas con el estado de pedidos, promociones, etc.
+
+Favoritos:
+Endpoint para gestionar una lista de productos favoritos.
+
+Revisiones de productos:
+Permitir a los usuarios dejar comentarios o calificaciones sobre los productos comprados.

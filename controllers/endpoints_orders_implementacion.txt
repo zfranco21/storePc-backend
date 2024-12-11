@@ -1,0 +1,39 @@
+Obtener órdenes por usuario:
+
+Lista todas las órdenes realizadas por un usuario específico.
+Historial de órdenes:
+
+Devuelve un historial detallado de las compras de un usuario, incluyendo productos, cantidades y estado.
+Actualizar estado de una orden:
+
+Endpoint para que los administradores actualicen el estado de una orden (e.g., "Pagada", "Enviada", "Entregada").
+Filtrar órdenes por estado:
+
+Permite filtrar órdenes por estado actual, útil para paneles administrativos.
+Resumen de órdenes:
+
+Generar un resumen de la orden (productos, total, dirección de envío, etc.) para mostrar al usuario tras la compra.
+Cancelar orden:
+
+Endpoint para que el usuario o administrador pueda cancelar una orden que aún no haya sido procesada.
+Reintentar pago:
+
+Endpoint para manejar intentos fallidos de pago y permitir al usuario volver a intentarlo.
+Rastrear orden (tracking):
+
+Proporciona información sobre el envío de la orden, incluyendo datos de transporte y ubicación actual.
+Órdenes más recientes:
+
+Lista de las órdenes más recientes para el panel de administración o para mostrar al usuario.
+Generar factura:
+
+Endpoint para generar y descargar una factura en PDF o cualquier otro formato.
+Órdenes destacadas (administrador):
+
+Permite a los administradores ver las órdenes más grandes (por monto) o las más importantes.
+Verificar validez de productos en la orden:
+
+Endpoint para validar la disponibilidad de stock de los productos de una orden antes de confirmarla.
+Estadísticas de órdenes (administrador):
+
+Información como total de ventas, número de órdenes completadas, promedio de gasto por usuario, etc.
