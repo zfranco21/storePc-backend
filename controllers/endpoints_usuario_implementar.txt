@@ -4,32 +4,26 @@ Validación de datos (email único, contraseñas seguras). DONE
 Generación de un token de acceso al registrarse.
 
 Inicio de sesión: 
-Verificar credenciales del usuario. 
-Posibilidad de iniciar sesión como administrador si corresponde.
+Verificar credenciales del usuario. DONE
+Posibilidad de iniciar sesión como administrador si corresponde. DONE
 Posibilidad de devolver un token de autenticación (JWT, por ejemplo).
 
-Cierre de sesión:
-Invalidar el token actual o borrar la sesión activa.
-Renovación de token:
-
-Endpoint para renovar un token JWT antes de que expire.
 Gestión de Datos de Usuarios
 
 Actualización de perfil:
-Permitir al usuario actualizar su información personal como nombre, email o contraseña.
-Recuperación de contraseña:
+Permitir al usuario actualizar su información personal como nombre, email o contraseña. DONE
 
+Recuperación de contraseña:
 Enviar un correo con un enlace o código para restablecer la contraseña.
 
 Restablecimiento de contraseña:
 Endpoint para que el usuario establezca una nueva contraseña tras la verificación.
-Gestión de Roles y Permisos
 
 Promoción a administrador:
 Endpoint para que un usuario administrador pueda otorgar permisos de administrador a otros usuarios.
 
 Listar usuarios (administradores):
-Permitir a los administradores obtener una lista de todos los usuarios registrados.
+Permitir a los administradores obtener una lista de todos los usuarios registrados. DONE
 
 Suspender usuarios:
 Endpoint para que un administrador desactive o suspenda cuentas de usuarios problemáticos.

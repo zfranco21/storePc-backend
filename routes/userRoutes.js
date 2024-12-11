@@ -6,8 +6,6 @@ const userController = require("../controllers/userController");
 router.get("/", userController.getAllUsers); // Obtener todos los usuarios
 router.get("/:id", userController.getUserById); // Obtener un usuario por ID
 router.post("/searchByEmail", userController.getUserByEmail); // Buscar un usuario por email
-router.post("/login", userController.getAllUsers); // Obtener todos los usuarios
-
 router.post("/", userController.createUser); // Crear un usuario
 router.put("/:id", userController.updateUser); // Actualizar un usuario
 router.delete("/:id", userController.deleteUser); // Eliminar un usuario
