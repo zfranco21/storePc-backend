@@ -20,7 +20,7 @@ exports.getUserById = async (req, res) => {
     res.status(500).json({ error: "Error al obtener el usuario" });
   }
 };
-
+// Obtiene un usuario por email
 exports.getUserByEmail = async (req, res) => {
   try {
     const { email } = req.body; // Extraer el email del cuerpo de la solicitud
@@ -44,6 +44,24 @@ exports.getUserByEmail = async (req, res) => {
   } catch (error) {
     console.error("Error al obtener el usuario:", error); // Log para depuración
     res.status(500).json({ error: "Error al obtener el usuario" });
+  }
+};
+// habilita o deshabilita un usuario por id
+exports.enableUser = async (req, res) => {
+  try {
+    const userId = req.params.id; // Obtiene el ID del usuario desde los parámetros de la ruta
+
+    const user = await User.findById(userId);
+    if (!user) {
+      return res.status(404).json({ error: "Usuario no encontrado" });
+    }
+
+    user.isEnabled = !user.isEnabled;
+    await user.save();
+
+    res.status(200).json(user);
+  } catch (error) {
+    res.status(500).json({ error: "Error al actualizar al usuario" });
   }
 };
 

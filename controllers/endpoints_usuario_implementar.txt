@@ -26,7 +26,9 @@ Listar usuarios (administradores):
 Permitir a los administradores obtener una lista de todos los usuarios registrados. DONE
 
 Suspender usuarios:
-Endpoint para que un administrador desactive o suspenda cuentas de usuarios problemáticos.
+Endpoint para que un administrador desactive o suspenda cuentas de usuarios problemáticos. DONE
+
+
 Gestión de Carrito y Pedidos
 
 Obtener carrito del usuario:
