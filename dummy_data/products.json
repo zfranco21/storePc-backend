@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Mouse Logitech G Pro",
+    "description": "Mouse ergonómico de alta precisión ideal para gamers profesionales.",
+    "price": 59.99,
+    "stock": 50,
+    "category": "Periféricos",
+    "image": "https://example.com/images/mouse-logitech-g-pro.jpg"
+  },
+  {
+    "name": "Teclado Mecánico Razer BlackWidow V3",
+    "description": "Teclado mecánico con switches verdes, retroiluminación RGB y diseño ergonómico.",
+    "price": 129.99,
+    "stock": 30,
+    "category": "Periféricos",
+    "image": "https://example.com/images/razer-blackwidow-v3.jpg"
+  },
+  {
+    "name": "Monitor Acer Predator X34",
+    "description": "Monitor ultra ancho de 34 pulgadas con resolución 1440p y tasa de refresco de 180Hz.",
+    "price": 799.99,
+    "stock": 15,
+    "category": "Monitores",
+    "image": "https://example.com/images/acer-predator-x34.jpg"
+  },
+  {
+    "name": "Placa Base ASUS ROG Strix B550-F",
+    "description": "Placa base ATX para procesadores AMD Ryzen con soporte para PCIe 4.0 y Wi-Fi 6.",
+    "price": 189.99,
+    "stock": 20,
+    "category": "Componentes",
+    "image": "https://example.com/images/asus-rog-strix-b550f.jpg"
+  },
+  {
+    "name": "Tarjeta Gráfica NVIDIA GeForce RTX 3080",
+    "description": "Tarjeta gráfica de alto rendimiento para gaming y trabajos de diseño 3D, con 10GB de VRAM.",
+    "price": 1499.99,
+    "stock": 10,
+    "category": "Componentes",
+    "image": "https://example.com/images/rtx-3080.jpg"
+  },
+  {
+    "name": "Procesador Intel Core i9-11900K",
+    "description": "Procesador de 8 núcleos y 16 hilos, ideal para gaming y edición de video de alta demanda.",
+    "price": 599.99,
+    "stock": 25,
+    "category": "Componentes",
+    "image": "https://example.com/images/intel-i9-11900k.jpg"
+  },
+  {
+    "name": "Disco Duro SSD Samsung 970 EVO Plus 1TB",
+    "description": "Disco duro SSD NVMe con velocidad de lectura de hasta 3500 MB/s y 1TB de capacidad.",
+    "price": 149.99,
+    "stock": 40,
+    "category": "Almacenamiento",
+    "image": "https://example.com/images/samsung-970-evo-plus-1tb.jpg"
+  },
+  {
+    "name": "Memoria RAM Corsair Vengeance LPX 16GB (2x8GB)",
+    "description": "Kit de memoria DDR4 de 16GB (2x8GB), velocidad de 3200 MHz, ideal para gaming y multitarea.",
+    "price": 79.99,
+    "stock": 60,
+    "category": "Memoria",
+    "image": "https://example.com/images/corsair-vengeance-lpx-16gb.jpg"
+  },
+  {
+    "name": "Fuente de Poder EVGA 650W 80 Plus Bronze",
+    "description": "Fuente de poder de 650W con certificación 80 Plus Bronze, ideal para PCs de gama media.",
+    "price": 59.99,
+    "stock": 35,
+    "category": "Componentes",
+    "image": "https://example.com/images/evga-650w-80plus-bronze.jpg"
+  },
+  {
+    "name": "Auriculares Corsair HS50 Pro",
+    "description": "Auriculares de diadema con sonido estéreo de alta calidad y micrófono desmontable.",
+    "price": 49.99,
+    "stock": 45,
+    "category": "Periféricos",
+    "image": "https://example.com/images/corsair-hs50-pro.jpg"
+  }
+]

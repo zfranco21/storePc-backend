@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Periféricos",
+    "description": "Dispositivos y accesorios como teclados, ratones, auriculares y más.",
+    "createdAt": "2024-12-01T12:00:00Z",
+    "updatedAt": "2024-12-01T12:00:00Z"
+  },
+  {
+    "name": "Componentes",
+    "description": "Componentes internos de la computadora como placas base, tarjetas gráficas, procesadores, etc.",
+    "createdAt": "2024-12-01T12:00:00Z",
+    "updatedAt": "2024-12-01T12:00:00Z"
+  },
+  {
+    "name": "Monitores",
+    "description": "Pantallas para computadoras con diferentes tamaños y resoluciones.",
+    "createdAt": "2024-12-01T12:00:00Z",
+    "updatedAt": "2024-12-01T12:00:00Z"
+  },
+  {
+    "name": "Almacenamiento",
+    "description": "Dispositivos de almacenamiento como discos duros SSD, HDD y otros.",
+    "createdAt": "2024-12-01T12:00:00Z",
+    "updatedAt": "2024-12-01T12:00:00Z"
+  },
+  {
+    "name": "Memoria",
+    "description": "Memorias RAM para mejorar el rendimiento de tu computadora.",
+    "createdAt": "2024-12-01T12:00:00Z",
+    "updatedAt": "2024-12-01T12:00:00Z"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Juan Pérez",
+    "email": "juan.perez@example.com",
+    "password": "password123",
+    "isAdmin": true
+  },
+  {
+    "name": "Ana García",
+    "email": "ana.garcia@example.com",
+    "password": "password123",
+    "isAdmin": false
+  },
+  {
+    "name": "Carlos López",
+    "email": "carlos.lopez@example.com",
+    "password": "password123",
+    "isAdmin": false
+  },
+  {
+    "name": "Marta Sánchez",
+    "email": "marta.sanchez@example.com",
+    "password": "password123",
+    "isAdmin": false
+  },
+  {
+    "name": "Pedro Fernández",
+    "email": "pedro.fernandez@example.com",
+    "password": "password123",
+    "isAdmin": true
+  }
+]

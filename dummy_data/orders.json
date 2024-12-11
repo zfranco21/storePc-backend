@@ -1,0 +1,87 @@
+[
+  {
+    "user": "60b0f4f8b8c7e31d4c2d2e8b",  
+    "products": [
+      {
+        "product": "60b0f522b8c7e31d4c2d2e8c",  
+        "quantity": 2,
+        "price": 59.99
+      },
+      {
+        "product": "60b0f532b8c7e31d4c2d2e8d",  
+        "quantity": 1,
+        "price": 129.99
+      }
+    ],
+    "totalPrice": 249.97,
+    "status": "Pagada",
+    "createdAt": "2024-12-05T14:30:00Z",
+    "updatedAt": "2024-12-05T14:45:00Z"
+  },
+  {
+    "user": "60b0f4f8b8c7e31d4c2d2e8c",  
+    "products": [
+      {
+        "product": "60b0f522b8c7e31d4c2d2e8d", 
+        "quantity": 1,
+        "price": 129.99
+      }
+    ],
+    "totalPrice": 129.99,
+    "status": "Pendiente",
+    "createdAt": "2024-12-06T16:00:00Z",
+    "updatedAt": "2024-12-06T16:05:00Z"
+  },
+  {
+    "user": "60b0f4f8b8c7e31d4c2d2e8d", 
+    "products": [
+      {
+        "product": "60b0f522b8c7e31d4c2d2e8f",  
+        "quantity": 1,
+        "price": 799.99
+      },
+      {
+        "product": "60b0f532b8c7e31d4c2d2e90", 
+        "quantity": 1,
+        "price": 599.99
+      }
+    ],
+    "totalPrice": 1399.98,
+    "status": "Enviado",
+    "createdAt": "2024-12-07T11:00:00Z",
+    "updatedAt": "2024-12-07T12:00:00Z"
+  },
+  {
+    "user": "60b0f4f8b8c7e31d4c2d2e91", 
+    "products": [
+      {
+        "product": "60b0f522b8c7e31d4c2d2e8f", 
+        "quantity": 1,
+        "price": 799.99
+      }
+    ],
+    "totalPrice": 799.99,
+    "status": "Pendiente",
+    "createdAt": "2024-12-08T10:00:00Z",
+    "updatedAt": "2024-12-08T10:10:00Z"
+  },
+  {
+    "user": "60b0f4f8b8c7e31d4c2d2e92",  
+    "products": [
+      {
+        "product": "60b0f522b8c7e31d4c2d2e8c", 
+        "quantity": 3,
+        "price": 59.99
+      },
+      {
+        "product": "60b0f532b8c7e31d4c2d2e8d", 
+        "quantity": 1,
+        "price": 129.99
+      }
+    ],
+    "totalPrice": 409.96,
+    "status": "Cancelada",
+    "createdAt": "2024-12-09T09:00:00Z",
+    "updatedAt": "2024-12-09T09:15:00Z"
+  }
+]
