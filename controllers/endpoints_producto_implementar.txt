@@ -1,15 +1,14 @@
 Filtrar productos:
 
-Por categoría: Obtener productos pertenecientes a una categoría específica.
+Por categoría: Obtener productos pertenecientes a una categoría específica. DONE
 Por rango de precios: Filtrar productos que se encuentren entre un precio mínimo y máximo.
-Por disponibilidad: Mostrar solo productos en stock.
+Por disponibilidad: Mostrar solo productos en stock. DONE
 
 Buscar productos:
-Búsqueda por nombre o descripción: Permitir a los usuarios buscar productos utilizando palabras clave.
+Búsqueda por nombre o descripción: Permitir a los usuarios buscar productos utilizando palabras clave. DONE
 
 Ordenar productos:
 Por precio: Orden ascendente o descendente.
-Por popularidad o calificación: Mostrar los productos más vendidos o mejor valorados.
 
 Destacados o promociones:
 Productos en oferta: Mostrar productos que tienen descuentos aplicados.
@@ -29,8 +28,8 @@ Sugerencias de productos:
 Productos similares: Mostrar productos relacionados o complementarios.
 Recomendaciones personalizadas: Basadas en el historial de compras o preferencias del usuario.
 
-Gestión de stock (solo para administradores):
-Actualizar inventario: Endpoint para modificar manualmente la cantidad en stock de un producto.
+Gestión de stock :
+Actualizar inventario: Endpoint para modificar manualmente la cantidad en stock de un producto. DONE
 
 Estado de productos (habilitar/deshabilitar):
-Endpoint para ocultar productos temporalmente sin eliminarlos (ej., productos fuera de stock o en mantenimiento).
+Endpoint para ocultar productos temporalmente sin eliminarlos (ej., productos fuera de stock o en mantenimiento). DONE

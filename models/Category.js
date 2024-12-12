@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const categorySchema = new mongoose.Schema({
   name: { type: String, required: true, unique: true }, // Nombre único de la categoría
   description: { type: String }, // Descripción opcional de la categoría
-  subcategories: [{ type: mongoose.Schema.Types.ObjectId, ref: "Category" }], //array reservado para subcategorias
   createdAt: { type: Date, default: Date.now },
   updatedAt: { type: Date, default: Date.now },
 });
