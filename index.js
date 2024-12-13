@@ -6,12 +6,13 @@ const productRoutes = require("./routes/productRoutes");
 const categoryRoutes = require("./routes/categoryRoutes");
 const orderRoutes = require("./routes/orderRoutes");
 require("dotenv").config(); // Cargar variables de entorno desde un archivo .env
+const cors = require("cors");
 
 const app = express();
 const PORT = process.env.PORT; // Usar el puerto desde variables de entorno o 3000 por defecto
 
 // Middleware
-app.use(express.json());
+app.use(express.json(), cors());
 
 // Conexión a MongoDB Atlas
 mongoose

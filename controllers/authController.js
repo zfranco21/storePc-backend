@@ -7,6 +7,7 @@ exports.login = async (req, res) => {
 
     // Validar que email y password estén presentes
     if (!email || !password) {
+      console.log("email y contraseña no recibidos");
       return res
         .status(400)
         .json({ error: "El email y la contraseña son obligatorios" });
