@@ -19,9 +19,9 @@ const orderSchema = new mongoose.Schema({
     enum: ["Pendiente", "Pagada", "Enviado", "Entregada", "Cancelada"],
     default: "Pendiente",
   }, // Estado de la orden
-  adress: { type: string, required: true },
-  telephone: { type: string, required: true },
-  comment: { type: string, default: "" },
+  adress: { type: String, required: true },
+  telephone: { type: String, required: true },
+  comment: { type: String, required: false },
   createdAt: { type: Date, default: Date.now },
   updatedAt: { type: Date, default: Date.now },
 });
