@@ -1,5 +1,6 @@
 const Order = require("../models/Order");
 const Product = require("../models/Product");
+const User = require("../models/User");
 
 // Obtener todas las órdenes
 exports.getAllOrders = async (req, res) => {
@@ -26,52 +27,113 @@ exports.getOrderById = async (req, res) => {
 
 // Crear una nueva orden
 exports.createOrder = async (req, res) => {
+  console.log(User);
+  console.log("Datos recibidos:", req.body); // Verificar el cuerpo de la solicitud
   try {
-    const { user, products } = req.body;
+    const { user, products, adress, telephone, totalPrice } = req.body;
+
+    if (!user || !products || !adress || !telephone || !totalPrice) {
+      return res.status(400).json({ error: "Faltan campos obligatorios." });
+    }
+
+    // Verificar que los productos tengan los datos esperados
+    for (let item of products) {
+      if (!item.product || !item.quantity || !item.price) {
+        return res
+          .status(400)
+          .json({ error: "Faltan datos en los productos." });
+      }
+    }
 
     // Verificar que el usuario exista
     const userExists = await User.findById(user);
     if (!userExists)
       return res.status(404).json({ error: "Usuario no encontrado" });
 
-    // Calcular el precio total de la orden
-    let totalPrice = 0;
+    // Lógica para calcular el precio total y guardar la orden
+    let totalCalculatedPrice = 0;
     for (let item of products) {
       const product = await Product.findById(item.product);
       if (!product)
         return res
           .status(404)
           .json({ error: `Producto no encontrado: ${item.product}` });
-      totalPrice += product.price * item.quantity;
+      totalCalculatedPrice += product.price * item.quantity;
     }
 
-    // Crear la nueva orden
     const newOrder = new Order({
       user,
       products,
-      totalPrice,
+      totalPrice: totalCalculatedPrice,
+      adress,
+      telephone,
+      comment: req.body.comment || "",
     });
-    const savedOrder = await newOrder.save();
 
+    const savedOrder = await newOrder.save();
     res.status(201).json(savedOrder);
   } catch (err) {
-    res.status(400).json({ error: "Error al crear la orden" });
+    console.error("Error al crear la orden:", err); // Log para debugging
+    res.status(400).json({ error: req.body });
   }
 };
 
 // Actualizar una orden
 exports.updateOrder = async (req, res) => {
+  console.log("Datos recibidos para actualizar la orden:", req.body); // Verificar los datos recibidos
   try {
+    const { user, products, adress, telephone, totalPrice, comment } = req.body;
+
+    if (!user || !products || !adress || !telephone || !totalPrice) {
+      return res.status(400).json({ error: "Faltan campos obligatorios." });
+    }
+
+    // Verificar que los productos tengan los datos esperados
+    for (let item of products) {
+      if (!item.product || !item.quantity || !item.price) {
+        return res
+          .status(400)
+          .json({ error: "Faltan datos en los productos." });
+      }
+    }
+
+    // Verificar que el usuario exista
+    const userExists = await User.findById(user);
+    if (!userExists)
+      return res.status(404).json({ error: "Usuario no encontrado" });
+
+    // Lógica para calcular el precio total de la orden
+    let totalCalculatedPrice = 0;
+    for (let item of products) {
+      const product = await Product.findById(item.product);
+      if (!product)
+        return res
+          .status(404)
+          .json({ error: `Producto no encontrado: ${item.product}` });
+      totalCalculatedPrice += product.price * item.quantity;
+    }
+
+    // Actualizar la orden con los nuevos datos
     const updatedOrder = await Order.findByIdAndUpdate(
       req.params.id,
-      req.body,
+      {
+        user,
+        products,
+        totalPrice: totalCalculatedPrice,
+        adress,
+        telephone,
+        comment: comment || "",
+        updatedAt: Date.now(), // Actualizar la fecha de modificación
+      },
       { new: true } // Devuelve el documento actualizado
     ).populate("user products.product");
 
     if (!updatedOrder)
       return res.status(404).json({ error: "Orden no encontrada" });
+
     res.status(200).json(updatedOrder);
   } catch (err) {
+    console.error("Error al actualizar la orden:", err); // Log para debugging
     res.status(400).json({ error: "Error al actualizar la orden" });
   }
 };
