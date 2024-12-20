@@ -9,14 +9,17 @@ require("dotenv").config(); // Cargar variables de entorno desde un archivo .env
 const cors = require("cors");
 
 const app = express();
-const PORT = process.env.PORT; // Usar el puerto desde variables de entorno o 3000 por defecto
+const PORT = process.env.PORT || 3000; // Usar un puerto dinámico o 3000 como predeterminado
 
 // Middleware
 app.use(express.json(), cors());
 
 // Conexión a MongoDB Atlas
 mongoose
-  .connect(process.env.MONGO_URI)
+  .connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => console.log("Conectado a MongoDB Atlas"))
   .catch((err) => {
     console.error("Error al conectar con MongoDB Atlas", err);
@@ -40,7 +43,5 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: "Error interno del servidor" });
 });
 
-// Iniciar el servidor
-app.listen(PORT, () => {
-  console.log(`Servidor corriendo en ${PORT}`);
-});
+// Exportar la app para que Vercel la utilice
+module.exports = app;
