@@ -5,14 +5,6 @@ exports.login = async (req, res) => {
   try {
     const { email, password } = req.body;
 
-    // Validar que email y password estén presentes
-    if (!email || !password) {
-      console.log("email y contraseña no recibidos");
-      return res
-        .status(400)
-        .json({ error: "El email y la contraseña son obligatorios" });
-    }
-
     // Buscar el usuario por email
     const user = await User.findOne({ email });
     if (!user) {
@@ -26,7 +18,7 @@ exports.login = async (req, res) => {
       });
     }
 
-    // Verificar la contraseña directamente
+    // Comparar contraseñas directamente
     if (password !== user.password) {
       return res.status(401).json({ error: "Credenciales inválidas" });
     }
