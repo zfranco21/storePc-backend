@@ -26,6 +26,10 @@ mongoose
   });
 
 // Rutas
+app.get("/", (req, res) => {
+  res.send("Backend funcionando correctamente");
+});
+
 app.use("/auth", authRoutes); // Ruta de autenticación
 app.use("/users", userRoutes); // Prefijo para las rutas de usuarios
 app.use("/products", productRoutes); // Prefijo para las rutas de productos
