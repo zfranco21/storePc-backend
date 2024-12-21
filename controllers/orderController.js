@@ -27,8 +27,6 @@ exports.getOrderById = async (req, res) => {
 
 // Crear una nueva orden
 exports.createOrder = async (req, res) => {
-  console.log(User);
-  console.log("Datos recibidos:", req.body); // Verificar el cuerpo de la solicitud
   try {
     const { user, products, adress, telephone, totalPrice } = req.body;
 
@@ -80,7 +78,6 @@ exports.createOrder = async (req, res) => {
 
 // Actualizar una orden
 exports.updateOrder = async (req, res) => {
-  console.log("Datos recibidos para actualizar la orden:", req.body); // Verificar los datos recibidos
   try {
     const { user, products, adress, telephone, totalPrice, comment } = req.body;
 
